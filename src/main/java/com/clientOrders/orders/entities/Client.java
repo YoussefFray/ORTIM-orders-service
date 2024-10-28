@@ -17,11 +17,9 @@ import java.util.List;
 @Builder
 
 public class Client {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long clientId;
-
     private String firstName;
     private String lastName;
     private String email;
