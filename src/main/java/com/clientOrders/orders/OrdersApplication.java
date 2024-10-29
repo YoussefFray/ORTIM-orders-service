@@ -16,7 +16,7 @@ public class OrdersApplication {
 	@Bean
  CommandLineRunner commandLineRunner(KafkaTemplate<String,String> kafkaTemplate) {
 	 return args -> {
-		 kafkaTemplate.send("orders_notification", "Hello from Kafka");
+		 kafkaTemplate.send("orders_notification", "Hello from Kafka 2");
 	 };
  }
 }
